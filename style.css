@@ -1,19 +1,33 @@
+:root {
+  --color-accent: #5eead4;
+  --color-highlight: #e2e8f0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", serif;
-  color: rgba(255, 255, 255, 0.849);
+  font-family: "Inter", serif;
+  font-size: 1rem;
 }
 
 body {
-  background-color: #0f0339;
+  background-color: #0f172a;
+  color: #94a3b8;
 }
 
 .container {
   display: flex;
   column-gap: 10rem;
   min-height: 100vh;
+}
+#underlay {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  top: 50%;
+  left: 50%;
 }
 .left-section {
   display: flex;
@@ -25,16 +39,36 @@ body {
   min-height: 100%;
   width: 100%;
 }
+.highlight-text {
+  color: var(--color-highlight);
+}
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h6::selection {
+  background-color: var(--color-accent);
+  color: #0f172a;
+}
+.achor-text {
+  color: var(--color-highlight);
+  transition-duration: 200ms;
+}
+.achor-text:hover {
+  color: var(--color-accent);
+}
 .name h1 {
   padding-bottom: 0.4rem;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 2rem;
 }
-
+.name > a {
+  text-decoration: none;
+}
 .name h3 {
   padding-bottom: 1rem;
   font-weight: 400;
-  font-size: 20px;
 }
 
 .name p {
@@ -54,7 +88,7 @@ body {
 .icons {
   display: flex;
   gap: 1rem;
-  font-size: 20px;
+  font-size: 1rem;
   flex: 1;
   align-items: flex-end;
 }
@@ -62,28 +96,64 @@ body {
 .right-section {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-right: 20rem;
   margin-top: 5rem;
+  gap: 2rem;
 }
 
 .presentation-details {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
+}
+
+.experience-detail-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.experience-detail-container:hover {
+  border: 1px solid;
+  border-radius: 5%;
+  padding: 1rem;
+  box-shadow: 12px 2px 20px 0px rgba(48, 47, 117, 0.33);
+}
+.experience-detail-container p {
+  width: auto;
+  flex: 1 1 1;
+  font-size: 0.9rem;
+}
+.experience-detail-container > div {
+  width: auto;
+  flex: 1 1 0;
 }
 
 .experience-detail {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  gap: 0.5rem;
-  background-color: orange;
 }
-.item1 {
-  background-color: green;
-  align-self: end;
+.experience-detail h3 {
+  margin-bottom: 0.5rem;
 }
-.item2 {
-  background-color: rgb(2, 24, 2);
+.experience-detail > ul {
+  list-style-type: none;
+  align-self: flex-start;
+}
+.technologies-details {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  gap: 0.5rem 0.5rem;
+}
+
+.technologies-details > * {
+  color: green;
+  font-weight: bold;
+  background-color: rgb(33, 41, 75);
+  border-radius: 0.5rem;
+  width: auto;
+  padding: 0.5rem;
+  /* transition-duration: 10s; */
 }

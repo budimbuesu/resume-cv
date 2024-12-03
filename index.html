@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -26,20 +32,27 @@
     <title>Resume</title>
   </head>
   <body class="container">
+    <div id="underlay"></div>
+
     <section class="left-section">
       <div class="name">
-        <h1>Brittany Chiang</h1>
-        <h3>Front End Engineer</h3>
+        <a href="/"
+          ><h1 class="highlight-text achor-text">Mister TestCssHtml</h1></a
+        >
+        <h3 class="highlight-text">Front End Engineer</h3>
+        <h3 class="highlight-text">Front End Engineer</h3>
+        <p></p>
         <p>
           I build accessible, pixel-perfect digital<br />
-          experiences for the web.
+          I build accessible, pixel-perfect digital<br />
+          experiences for the web. experiences for the web.
         </p>
       </div>
-      <div class="resume-title">
-        <a href="/">About</a>
-        <a href="/">Experience</a>
-        <a href="/">Projects</a>
-      </div>
+      <nav class="resume-title">
+        <a href="/" class="highlight-text achor-text">About</a>
+        <a href="/" class="highlight-text achor-text">Experience</a>
+        <a href="/" class="highlight-text achor-text">Projects</a>
+      </nav>
       <div class="icons">
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-codepen"></i>
@@ -59,107 +72,124 @@
           built for performance and usability.
         </p>
         <p>
-          Currently, I'm a Senior Front-End Engineer at <span>Klaviyo</span>,
-          specializing in accessibility. I contribute to the creation and
-          maintenance of UI components that power Klaviyo’s frontend, ensuring
-          our platform meets web accessibility standards and best practices to
-          deliver an inclusive user experience.
+          Currently, I'm a Senior Front-End Engineer at
+          <a class="achor-text">Klaviyo</a>, specializing in accessibility. I
+          contribute to the creation and maintenance of UI components that power
+          Klaviyo’s frontend, ensuring our platform meets web accessibility
+          standards and best practices to deliver an inclusive user experience.
         </p>
         <p>
           In the past, I've had the opportunity to develop software across a
-          variety of settings — from <span>advertising agencies</span> and
-          <span>large</span>
-          <span>to start-ups</span> and
-          <span>small digital product studios</span>. Additionally, I also
-          released a <span>comprehensive video course</span> a few years ago,
+          variety of settings — from
+          <a class="achor-text">advertising agencies</a> and
+          <a class="achor-text">large</a>
+          <a class="achor-text">to start-ups</a> and
+          <a class="achor-text">small digital product studios</a>. Additionally,
+          I also released a
+          <a class="achor-text">comprehensive video course</a> a few years ago,
           guiding learners through building a web app with the Spotify API.
         </p>
         <p>
           In my spare time, I’m usually climbing, reading, hanging out with my
           wife and two cats, or running around Hyrule searching for
-          <span>Korok seeds</span>
+          <a class="achor-text">Korok seeds</a>
         </p>
       </div>
 
-      <div class="experience-detail">
-        <p class="item1">2024 - PRESENT</p>
-        <h3 class="item2">Senior Frontend Engineer, Accessibility · Klaviyo</h3>
-        <p class="item3">
-          Build and maintain critical components used to construct Klaviyo’s
-          frontend, across the whole product. Work closely with cross-functional
-          teams, including developers, designers, and product managers, to
-          implement and advocate for best practices in web accessibility.
-        </p>
-        <ul class="item4">
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Storybook</li>
-        </ul>
-      </div>
-      <div>
+      <div class="experience-detail-container">
         <p>2024 - PRESENT</p>
-        <h3>Senior Frontend Engineer, Accessibility · Klaviyo</h3>
-        <p>
-          Build and maintain critical components used to construct Klaviyo’s
-          frontend, across the whole product. Work closely with cross-functional
-          teams, including developers, designers, and product managers, to
-          implement and advocate for best practices in web accessibility.
-        </p>
-        <ul>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Storybook</li>
-        </ul>
+        <div class="experience-detail">
+          <h3>Senior Frontend Engineer, Accessibility · Klaviyo</h3>
+          <p>
+            Build and maintain critical components used to construct Klaviyo’s
+            frontend, across the whole product. Work closely with
+            cross-functional teams, including developers, designers, and product
+            managers, to implement and advocate for best practices in web
+            accessibility.
+          </p>
+          <ul class="technologies-details">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Storybook</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <p>2024 - PRESENT</p>
-        <h3>Senior Frontend Engineer, Accessibility · Klaviyo</h3>
-        <p>
-          Build and maintain critical components used to construct Klaviyo’s
-          frontend, across the whole product. Work closely with cross-functional
-          teams, including developers, designers, and product managers, to
-          implement and advocate for best practices in web accessibility.
-        </p>
-        <ul>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Storybook</li>
-        </ul>
+      <div class="experience-detail-container">
+        <p>2022 - 2024</p>
+        <div class="experience-detail">
+          <h3>Senior Frontend Engineer, Accessibility · Klaviyo</h3>
+          <p>
+            Build and maintain critical components used to construct Klaviyo’s
+            frontend, across the whole product. Work closely with
+            cross-functional teams, including developers, designers, and product
+            managers, to implement and advocate for best practices in web
+            accessibility.
+          </p>
+          <ul class="technologies-details">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Storybook</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <p>2024 - PRESENT</p>
-        <h3>Senior Frontend Engineer, Accessibility · Klaviyo</h3>
-        <p>
-          Build and maintain critical components used to construct Klaviyo’s
-          frontend, across the whole product. Work closely with cross-functional
-          teams, including developers, designers, and product managers, to
-          implement and advocate for best practices in web accessibility.
-        </p>
-        <ul>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Storybook</li>
-        </ul>
+      <div class="experience-detail-container">
+        <p>2021 - 2022</p>
+        <div class="experience-detail">
+          <h3>Senior Frontend Engineer, Accessibility · Klaviyo</h3>
+          <p>
+            Build and maintain critical components used to construct Klaviyo’s
+            frontend, across the whole product. Work closely with
+            cross-functional teams, including developers, designers, and product
+            managers, to implement and advocate for best practices in web
+            accessibility.
+          </p>
+          <ul class="technologies-details">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Storybook</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <p>2024 - PRESENT</p>
-        <h3>Senior Frontend Engineer, Accessibility · Klaviyo</h3>
-        <p>
-          Build and maintain critical components used to construct Klaviyo’s
-          frontend, across the whole product. Work closely with cross-functional
-          teams, including developers, designers, and product managers, to
-          implement and advocate for best practices in web accessibility.
-        </p>
-        <ul>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Storybook</li>
-        </ul>
+      <div class="experience-detail-container">
+        <p>2020 - 2021</p>
+        <div class="experience-detail">
+          <h3>Senior Frontend Engineer, Accessibility · Klaviyo</h3>
+          <p>
+            Build and maintain critical components used to construct Klaviyo’s
+            frontend, across the whole product. Work closely with
+            cross-functional teams, including developers, designers, and product
+            managers, to implement and advocate for best practices in web
+            accessibility.
+          </p>
+          <ul class="technologies-details">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Storybook</li>
+          </ul>
+        </div>
+      </div>
+      <div class="experience-detail-container">
+        <p>2018 - 2020</p>
+        <div class="experience-detail">
+          <h3>Senior Frontend Engineer, Accessibility · Klaviyo</h3>
+          <p>
+            Build and maintain critical components used to construct Klaviyo’s
+            frontend, across the whole product. Work closely with
+            cross-functional teams, including developers, designers, and product
+            managers, to implement and advocate for best practices in web
+            accessibility.
+          </p>
+          <ul class="technologies-details">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Storybook</li>
+          </ul>
+        </div>
       </div>
     </section>
   </body>
